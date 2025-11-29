@@ -3,19 +3,19 @@
 ---
 
 ## Analisi📈
-ecco qua:[[ANALISI 1 INDICE\|ANALISI 1 INDICE]]
+ecco qua:[[ANNO 1/ANALISI 1/ANALISI 1 INDICE\|ANALISI 1 INDICE]]
 - riassunti❌
 - esercizi❌
 ## Programmazione💻
-eccoci qua:[[Programmazione INDICE\|Programmazione INDICE]]
+eccoci qua:[[ANNO 1/PROGRAMMAZIONE/Programmazione INDICE\|Programmazione INDICE]]
 - riassunti ✅
 - esercizi ❌
 ## Discreta 🔢
-eccoci qua:[[Discreta INDICE\|Discreta INDICE]]
+eccoci qua:[[ANNO 1/DISCRETA/Discreta INDICE\|Discreta INDICE]]
 - riassunti❌
 - esercizi ❌
 ## Logica e Reti Logiche💡
-eccolo qui:[[Logica INDICE\|Logica INDICE]]
+eccolo qui:[[ANNO 1/LOGICA/Logica INDICE\|Logica INDICE]]
 - riassunti ✅
 - esercizi ❌
 ## Architettura dei sistemi di elaborazione⚙️
@@ -23,7 +23,7 @@ eccolo qua:[[ANNO 1/ARCHITETTURA/Architettura INDICE\|Architettura INDICE]]
 - riassunti ✅
 - esercizi ✅
 ## Geometria 📐
-esercizi meccanici:[[GEOMETRIA INDICE\|GEOMETRIA INDICE]]
+esercizi meccanici:[[ANNO 1/GEOMETRIA/GEOMETRIA INDICE\|GEOMETRIA INDICE]]
 - riassunti❌
 - esercizi ✅
 
