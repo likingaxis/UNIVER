@@ -30,7 +30,7 @@ Se vai sotto trovi anche Reti
 
 >[!tip]- Reti
 ># Reti
->#### [[INDICE RETI\|INDICE RETI]]
+>#### [[ANNO 2/RETI/INDICE RETI\|INDICE RETI]]
 
 
 
