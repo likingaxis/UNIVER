@@ -27,7 +27,7 @@ ad es: calcolo cammini minimi di un grafo
 >- array
 >- liste
 >ci sara una roba simile con i dizionari con una determinata struttura dati ho qualcosa lineare e costante(tabella)
->![[Pasted image 20241203185820.png\|600]]
+>![Pasted image 20241203185820.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241203185820.png)
 >noi invece vogliamo tutta la roba costante
 
 >[!success]- tre implementazioni evolute che vedremo passo passo nel corso di questa lez
@@ -48,7 +48,7 @@ ora per tutta la lezione ci baseremo con la definizione di min heap
 - vige questa regola: per ogni nodo diverso dalla radice $chiave(v)$ $\geq$  $chiave(parent(v))$ 
 noi in passato abbiamo visto il max heap
 ##### Esempio di albero d-ario con d=3 e 18 nodi
-![[Pasted image 20241203190544.png\|Pasted image 20241203190544.png]]
+![Pasted image 20241203190544.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241203190544.png)
 
 ###### Proprietà del d-heap
 - con n nodi è alto $\Theta(log_dn)$
@@ -64,10 +64,10 @@ CI SONO DELLE PROCEDURE AUSILIARIE SIMILI AL NOSTRO VECCHIO AMICO FIXHEAP
 		scambia gli elementi andando in alto ripristinando le cose
 		costano l'altezza dell'albero $O(log_dn)$
 
-![[Pasted image 20241204165409.png\|600]]
+![Pasted image 20241204165409.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204165409.png)
 
 >[!info]- esempio grafico
->![[Pasted image 20241204170116.png\|600]]
+>![Pasted image 20241204170116.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204170116.png)
 >- passo 1 scambio 6 con 10
 >- passo 2 scambio 6 con 9
 
@@ -76,13 +76,13 @@ CI SONO DELLE PROCEDURE AUSILIARIE SIMILI AL NOSTRO VECCHIO AMICO FIXHEAP
 		fa una cosa simile ma scende in basso
 		questo deve pure scendere nei vari sotto alberi ricorsivamente quindi $O(dlog_dn)$
 		
-![[Pasted image 20241204165449.png\|600]]
+![Pasted image 20241204165449.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204165449.png)
 prendi il figlio $u$ con la chiave più piccola del nodo $v$, verifica se v non ha figli oppure se la condizione comunque è verificata, sennò scambia i due
 il codice tiene il riferimento diretto e quindi ogni volta prende il nodo che in caso ipotetico scende giù
 
 
 >[!info]- esempio grafico
->![[Pasted image 20241204172118.png\|600]]
+>![Pasted image 20241204172118.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204172118.png)
 >- passo 1 controllo i figli del primo livello
 >- passo 2 scambio 10 con 6
 >- passo 3 faccio confronto del min tra 9 e null (i figli di 10)
@@ -94,7 +94,7 @@ il codice tiene il riferimento diretto e quindi ogni volta prende il nodo che in
 #### APPLICHIAMO LE FANTOMATICHE PROPRIETA CON IL D-ARIO
 ##### findmin
 ez tocca solo prende la radice
-![[Pasted image 20241204172827.png\|Pasted image 20241204172827.png]]
+![Pasted image 20241204172827.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204172827.png)
 ###### costo: costante$O(1)$
 ##### inserimento elemento
 devo rispettare la proprietà che il penultimo livello deve essere completo e che devo essere compattato a sx
@@ -132,11 +132,11 @@ fare il merge con il d-heap non è il massimo
 1) faccio una sorta di heapify O(n)
 - genero un heap d-ario partendo da tutti gli elementi di $c_1$ e $c_2$
 - mette gli elementi in questa nuova coda e poi fa una sorta di heapify muovendo in basso dalla radice
-![[Pasted image 20241204182043.png\|500]]
+![Pasted image 20241204182043.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204182043.png)
 
 2) nel secondo caso faremo k inserimenti in un d-heap con n elementi
 	- $k=min \{ |c_1|,|c_2| \}$ e $n=|c_1|+|c_2|$
-![[Pasted image 20241204182637.png\|600]]
+![Pasted image 20241204182637.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204182637.png)
 
 >[!attention] i due costi dipendono dalla dimensione del d-heap
 
@@ -155,7 +155,7 @@ prima definiamo un concetto di un albero binomiale $B_i$
 è definito ricorsivamente  sapendo che $B_0$ è un nodo unico
 e invece i successivi saranno il merge dei precedenti 
 $B_{i+1}=B_i+B_i$  il figlio di una radice sarà l'altro albero
-![[Pasted image 20241204185758.png\|Pasted image 20241204185758.png]]
+![Pasted image 20241204185758.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204185758.png)
 ##### proprietà strutturali abbiamo $B_i$
 - nodi $2^i$ 
 - il grado della RADICE è $log_2n$

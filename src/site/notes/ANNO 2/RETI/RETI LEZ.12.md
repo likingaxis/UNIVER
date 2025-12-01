@@ -23,7 +23,7 @@ Il livello di rete si occupa di trasportare i segmenti (ossia i dati provenienti
 >
 >Questo processo avviene hop-by-hop, ossia ogni router prende una decisione fino a raggiungere la destinazione finale
 
-![[Pasted image 20250417213715.png\|Pasted image 20250417213715.png]]
+![Pasted image 20250417213715.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417213715.png)
 ### 🚦 Le **due funzioni chiave** del livello di rete:
 1. 🔹**Inoltro (forwarding)**
 	È il lavoro fatto da ogni singolo router per instradare ogni pacchetto (il discorso che facevamo prima dello "scegliere la porta corretta").
@@ -650,7 +650,7 @@ Esempio:
 #### Metodo vecchio
 ![Pasted image 20250418132714.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132714.png)
 
-![[Pasted image 20250418132730.png\|Pasted image 20250418132730.png]]
+![Pasted image 20250418132730.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132730.png)
 
 
 

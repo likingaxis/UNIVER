@@ -67,8 +67,8 @@ se il mittente invia un pacchetto ma a causa della congestione 🌐 esso è rall
 	- rimanda il pacchetto
 	- sostanzialmente invia due copie uguali al destinatario
 	- timeout ⏱️ (prematuro perché non sa della congestione 🌐)
-![[Pasted image 20250410181629.png\|Pasted image 20250410181629.png]]
-![[Pasted image 20250410181647.png\|Pasted image 20250410181647.png]]
+![Pasted image 20250410181629.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410181629.png)
+![Pasted image 20250410181647.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410181647.png)
 - il troughput è ridotto perché abbiamo più lavoro inutile
 
 #### Scenario 3 🟣
@@ -77,11 +77,11 @@ se il mittente invia un pacchetto ma a causa della congestione 🌐 esso è rall
 	- Un **percorso multi-hop** è un tragitto in rete in cui i dati devono **attraversare più di un router o nodo intermedio** per arrivare a destinazione.
 - è presente sia timeout ⏱️ che ritrasmissione 🔁
 Leggi la domanda e la risposta sotto:
-![[Pasted image 20250410182434.png\|Pasted image 20250410182434.png]]
+![Pasted image 20250410182434.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410182434.png)
 - Perché vengono scartati? i pacchetti blu?
 	- sostanzialmente vengono scartati perché quelli rossi arrivano prima di quelli blu e quindi si prendono tutta la banda
 	- quelli rossi subiscono la congestione 🌐
-![[Pasted image 20250410183302.png\|Pasted image 20250410183302.png]]
+![Pasted image 20250410183302.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410183302.png)
 - quando abbiamo una congestione 🌐 i collegamenti upstream sono limitati e quindi stiamo sprecando la loro capacità trasmissiva
 - in questo grafico si può vedere come sia tutto altalenante
 ### Riassunto sui vari grafici 📊
@@ -98,7 +98,7 @@ Leggi la domanda e la risposta sotto:
 Senza l'aiuto della rete(metodo che usa TCP)
 - i dispositivi che si scambiano le info devono dedurre ciò che accade
 	- attraverso il ritardo e le perdite dei pacchetti
-![[Pasted image 20250410184656.png\|Pasted image 20250410184656.png]]
+![Pasted image 20250410184656.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410184656.png)
 Con l'aiuto della rete
 - per capirlo fa come il dottore, vede i sintomi
 - i router forniscono un feedback diretto all'host 
@@ -126,7 +126,7 @@ viene usato nei protocolli
 per farlo si definisce un tasso di invio ovvero:
 - quanti byte al secondo posso spedire?
 	- per saperlo si utilizza la finestra della congestione 🌐 
-![[Pasted image 20250411160344.png\|400]]
+![Pasted image 20250411160344.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411160344.png)
 - In questa foto ci interessa in particolare la cwnd congestion window
 	- che viene regolata dinamicamente in base allo stato di congestione 🌐 della rete
 il tasso di invio viene calcolato dalla seguente formula
@@ -152,7 +152,7 @@ ora che sappiamo calcolarlo come facciamo però a gestirlo in relazione al fatto
 	- RTT: invio di un dato + feedback di rientro 📤📥
 Questo fenomeno viene chiamato AIMD
 - sta per Additive Increase, Multiplicative Decrease
-![[Pasted image 20250411162431.png\|Pasted image 20250411162431.png]]
+![Pasted image 20250411162431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411162431.png)
 
 ### TCP Reno 🌪️
 - È un algoritmo che implementa le idee di AIMD
@@ -174,7 +174,7 @@ TCP Tahoe è una versione più vecchia e semplice
 	- cwnd raddoppiato ad ogni RTT
 - perdita:
 	- riduco gli MSS
-![[Pasted image 20250411164115.png\|300]]
+![Pasted image 20250411164115.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411164115.png)
 
 #### Da esponenziale a lineare 📉➡️📈
 - avviene quando il cwnd assume più della metà del suo valore prima del timeout ⏱️
@@ -196,7 +196,7 @@ TCP Tahoe è una versione più vecchia e semplice
 - `cwnd = ssthresh` o poco sopra
 - Entra in **fast recovery**(vedi tra poco), poi passa alla **congestion avoidance**
 #### Macchina a stati che chiede all'esame 🧾
-![[Pasted image 20250411170120.png\|Pasted image 20250411170120.png]]
+![Pasted image 20250411170120.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411170120.png)
 >[!tip]- spiegazione(prova a farla da solo prima di leggere qua sotto)
 >spiegazione falla tra poco
 
@@ -230,7 +230,7 @@ rispetto a TCP Reno che cresceva linearmente, questo cresce di più
 - dato un $W_{max}$
 	- che indica la dimensione della finestra di quando è avvenuta una perdita
 - quando avviene una perdita si dimezza la velocità di trasmissione ma si ritorna più velocemente a $W_{max}$ avvicinandosi più lentamente
-![[Pasted image 20250411174707.png\|Pasted image 20250411174707.png]]
+![Pasted image 20250411174707.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411174707.png)
 possiamo vedere da questa foto qua sopra come sia molto più veloce
 Per capire quanto tempo ci metterà per raggiungere la dimensione $W_{max}$ si usa una variabile $K$
 - appena si è lontani da $K$ significa che si può andare più veloci
@@ -241,10 +241,10 @@ il problema di questo TCP è che si raggiunge ogni volta il collo di bottiglia
 - si intende che ogni volta si cerca di superare $W_{max}$ 
 	- invece non si dovrebbe far straripare il buffer
 foto che fa vedere che il buffer è sempre strapieno e poi si creano problemi di congestione ⚠️ 🌐
-![[Pasted image 20250411180007.png\|Pasted image 20250411180007.png]]
+![Pasted image 20250411180007.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411180007.png)
 >[!tip] quindi l'obiettivo è quello di tenere il buffer quasi pieno ma mai completamente
 
-![[Pasted image 20250411180141.png\|Pasted image 20250411180141.png]]
+![Pasted image 20250411180141.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411180141.png)
 ### Soluzione: TCP vegas ♠️🎯
 TCP Vegas è una evoluzione di CUBIC, cerca sostanzialmente ogni volta di calcolare una stima di quello che può essere il limite per non raggiungerlo mai
 Sta letteralmente facendo edging
@@ -282,7 +282,7 @@ alcune implementazioni di TCP spesso hanno un controllo della congestione 📊�
 - ECN viene negoziato nella fase di handshake iniziale dove:
 	- sia mit che dest devono dire:  👉 “**Sì, supporto ECN**”
 
-![[Pasted image 20250411183520.png\|500]]
+![Pasted image 20250411183520.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411183520.png)
 
 
 #### Il TCP è fair?
@@ -292,7 +292,7 @@ alcune implementazioni di TCP spesso hanno un controllo della congestione 📊�
 >- ho un troughput = a $\frac{R}{K}$
 >	- R è la capacità di rete
 >	- K sono le connessioni
->![[Pasted image 20250411184355.png\|400]]
+>![Pasted image 20250411184355.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411184355.png)
 
 Ora parliamo di questo applicato proprio al TCP:
 nella foto sottostante abbiamo un esempio con due troughput diversi che lavorano sulla stessa banda
@@ -311,7 +311,7 @@ questo trucco può quindi bypassare la fairness perché ti permette di fare più
 semplicemente fai $$troughput\_med=\frac{3}{4}*\frac{W}{RTT}$$
 dove 
 - W dimensione della finestra poco prima di una perdita
-![[Pasted image 20250411190027.png\|Pasted image 20250411190027.png]]
+![Pasted image 20250411190027.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411190027.png)
 
 #### Evoluzioni di TCP e UDP 🧬
 - TCP e UDP dominano il trasporto da **oltre 40 anni**.
@@ -330,7 +330,7 @@ Il TCP ha un problema delle Long, Fat pipes ovvero:
 - e con alta capacità di banda (Fat)(tanti Gbps di banda)
 Questo problema ci riporta a un esempio che scrivo sotto ma che in sostanza ci fa capire che per raggiungere la banda prefissata dovremmo praticamente avere 
 - 1 pacchetto perso ogni 5 miliardi
-![[Pasted image 20250411191414.png\|500]]
+![Pasted image 20250411191414.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411191414.png)
 W viene calcolato da: $Throughput\_ desiderato×RTT$
 
 >[!success] In questi casi servono varianti di TCP per risolvere il problema:
@@ -342,7 +342,7 @@ W viene calcolato da: $Throughput\_ desiderato×RTT$
 è un protocollo applicativo che si trova sopra a UDP 
 - serve per aumentare le performance di HTTP
 - usato in app di google e in molti server
-![[Pasted image 20250411191901.png\|400]]
+![Pasted image 20250411191901.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411191901.png)
 ##### Perché QUIC é meglio?
 - QUIC usa algoritmi per fare il controllo degli errori simili a quelli di TCP
 	- rileva perdite
@@ -360,7 +360,7 @@ W viene calcolato da: $Throughput\_ desiderato×RTT$
 			- se un merdone blocca il cesso è tutto intasato e bloccato
 
 ### TCP VS QUIC 🥊
-![[Pasted image 20250411192545.png\|Pasted image 20250411192545.png]]
+![Pasted image 20250411192545.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411192545.png)
 si può vedere una notevole differenza
 QUIC con un solo handshake fa tutto e può subito iniziare a inviare i dati
 

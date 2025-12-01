@@ -174,10 +174,10 @@ il Bluetooth usa questo sistema
 Viene passato questo token tra i nodi, il nodo può trasmettere quando ha questo token
 - il fatto che questo token debba essere scambiato tra nodo e nodo aumenta overhead
 - anche qui abbiamo un singolo punto di rottura il token
-![[Pasted image 20250521122744.png\|Pasted image 20250521122744.png]]
+![Pasted image 20250521122744.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122744.png)
 
 #### **accesso a Internet via cavo**, con un mix di **FDM, TDM** e **accesso multiplo casuale**
-![[Pasted image 20250521123618.png\|Pasted image 20250521123618.png]]
+![Pasted image 20250521123618.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521123618.png)
 Per fare il downstream vengono usati dei canali FDM in broadcast 
 - un solo CMTS(Cable Modem Termination System) trasmette nei canali quindi nessun problema di accessi multipli
 Per fare l'upstream vengono usati diversi canali che vengono contesi da i diversi utenti con un accesso casuale

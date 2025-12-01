@@ -23,7 +23,7 @@ L’ordine dei salti di frequenza è:
 - **M (Master Controller)**: dispositivo centrale che controlla la comunicazione.
 - **C (Client Device)**: dispositivi attivi che comunicano con il master.
 - **P (Parked Device)**: dispositivi registrati ma **inattivi** (non comunicano finché non vengono "risvegliati").
-![[Pasted image 20250529120105.png\|300]]
+![Pasted image 20250529120105.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529120105.png)
 
 Il Bluetooth non presenta infrastruttura fissa ma ha architettura ad hoc
 - i dispositivi si organizzano in modo dinamico ponendo master controller e client device
@@ -47,7 +47,7 @@ si può entrare in 2 modi
 		- L’**orologio (clock)**.
 		- L’**indirizzo di partecipazione**.
 #### Covid e Bluetooth
-![[Pasted image 20250529122506.png\|500]]
+![Pasted image 20250529122506.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529122506.png)
 ![Pasted image 20250529122511.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529122511.png)
 
 

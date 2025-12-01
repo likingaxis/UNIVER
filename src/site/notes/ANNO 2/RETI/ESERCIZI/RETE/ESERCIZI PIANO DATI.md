@@ -52,7 +52,7 @@
 1. calcola numero di bit minimi per poi fare $2^x-2\geq interfacce$ 
 	- poi $32-2^x$
 2. parti da /25 fai 8-16-24 e poi prendi il primo bit di 128 
-![[Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg\|Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg]]
+![Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg)
 3. divide in 
 - a) $2^{32-x}$
 - b) calcoli intervallo di indirizzi prendendo dal prefisso di rete al prefisso di broadcast, senza contarli

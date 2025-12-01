@@ -147,7 +147,7 @@ Una BSS è una infrastruttura che contiene:
 	- Questo messaggio passa **attraverso l’AP**, che lo inoltra nella sottorete.
 ![Pasted image 20250528123942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123942.png)
 #### Scansione attiva vs passiva
-![[Pasted image 20250528124155.png\|Pasted image 20250528124155.png]]
+![Pasted image 20250528124155.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124155.png)
 #### Wi-Fi con accesso multiplo
 Abbiamo bisogno di un protocollo per evitare collisioni nell'uso della rete Wi-Fi
 - In questo caso ne vedremo uno con accesso casuale
@@ -174,7 +174,7 @@ Abbiamo bisogno di un protocollo per evitare collisioni nell'uso della rete Wi-F
 ###### Da parte del destinatario
 Invia un ACK dopo un intervallo SIFS 
 IMPORTANTE: non entro nel canale appena si libera ma aspetto il tempo di backoff, perché non ci sono CD, le collisioni possono comunque esserci
-![[Pasted image 20250528144451.jpg\|300]]
+![Pasted image 20250528144451.jpg|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528144451.jpg)
 ### Ricapitolando
 nelle reti wireless non posso avere Collision Detection, questo perché è tutto su frequenze alterne e oltretutto non tutto è visibile da tutti allo stesso modo
 - inoltre la potenza di segnale trasmessa è sicuramente più forte di quella che dovresti sentire per rilevare se il canale è libero o meno
@@ -199,7 +199,7 @@ il mittente deve prenotare il canale
 	- sostanzialmente tutti i nodi ricevono questo pacchetto Clear To Send dopo che un nodo ha inviato un pacchetto Request To Send
 	- tutti gli altri dovranno rimandare eventuali trasmissioni
 Foto esempio:
-![[Pasted image 20250528144419.jpg\|Pasted image 20250528144419.jpg]]
+![Pasted image 20250528144419.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528144419.jpg)
 1. **A → AP: RTS (Request To Send)**  
     Il nodo **A** invia un messaggio RTS per “prenotare il canale”.
 2. **B → AP: RTS (collisione!)**  
@@ -212,22 +212,22 @@ Foto esempio:
     L’AP invia conferma della ricezione del frame.
 
 #### 802.11 i frame in particolare l'indirizzamento
-![[Pasted image 20250528124604.png\|Pasted image 20250528124604.png]]
+![Pasted image 20250528124604.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124604.png)
 
 
 #### Come cambia il frame da Ethernet a Wi-Fi?
 Viene aggiunto l'indirizzo MAC dell'AP
-![[Pasted image 20250528124717.png\|Pasted image 20250528124717.png]]
+![Pasted image 20250528124717.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124717.png)
 Il router R1 **non sa** che H1 è collegato via Wi-Fi
 quando il passaggio invece è da Wi-Fi a Ethernet si ha il contrario
-![[Pasted image 20250528124918.png\|500]]
+![Pasted image 20250528124918.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124918.png)
 
 ##### Frame di indirizzamento con dei dettagli su
 - la durata della trasmissione
 - il numero di quel determinato frame
 - il campo frame control si divide nei campi della foto sotto
 - con tipologia del frame
-![[Pasted image 20250528125140.png\|Pasted image 20250528125140.png]]
+![Pasted image 20250528125140.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528125140.png)
 #### Mobilità nella stessa sottorete 
 - quando un host si sposta da un AP a un altro però mantenendo stesso indirizzo IP
 	- inevitabilmente per avere stesso indirizzo IP sono collegati tutti e due dallo stesso switch
@@ -236,7 +236,7 @@ quando il passaggio invece è da Wi-Fi a Ethernet si ha il contrario
 		- riceve un frame da H1 e si ricorderà quale porta usare per raggiungerlo
 		- il nuovo AP invia un frame in broadcast con mittente H1 per far vedere allo switch dove si trova
 		- lo standard 802.11f definisce un protocollo inter-AP per affrontare questi tipi di problemi e tanti altri
-![[Pasted image 20250528125422.png\|Pasted image 20250528125422.png]]
+![Pasted image 20250528125422.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528125422.png)
 
 #### Funzionalità avanzate del 802.11
 - la stazione base e la stazione mobile possono cambiare dinamicamente il tasso trasmissivo

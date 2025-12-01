@@ -110,30 +110,30 @@ Notazioni utilizzate:
 ![Pasted image 20250429113400.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113400.png)
 ###### passo 3.1
 - prendo le distanze adiacenti a v e vedo se sono migliori
-![[Pasted image 20250429113652.png\|Pasted image 20250429113652.png]]
+![Pasted image 20250429113652.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113652.png)
 ###### passo 3.2
 - notiamo che sono tutte uguali o peggiori
-![[Pasted image 20250429113741.png\|Pasted image 20250429113741.png]]
+![Pasted image 20250429113741.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113741.png)
 ###### passo 4.1
 - prendo il nodo minore adiacente a v
 - in questo caso w
-![[Pasted image 20250429113842.png\|Pasted image 20250429113842.png]]
+![Pasted image 20250429113842.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113842.png)
 
 ###### passo 4.2
 - mi accorgo che sono tutti uguali o peggiori
-![[Pasted image 20250429113938.png\|Pasted image 20250429113938.png]]
+![Pasted image 20250429113938.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113938.png)
 ###### passo 5.1
 - cerco nodo minimo adiacente
 - in questo caso z
-![[Pasted image 20250429114133.png\|Pasted image 20250429114133.png]]
+![Pasted image 20250429114133.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114133.png)
 ###### passo 5.2
 - mi accorgo che non posso migliorare nulla da z
 - il risultato finale sarà:
-![[Pasted image 20250429114209.png\|Pasted image 20250429114209.png]]
-![[Pasted image 20250429114300.png\|Pasted image 20250429114300.png]]
+![Pasted image 20250429114209.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114209.png)
+![Pasted image 20250429114300.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114300.png)
 
 ### Altro esempio
-![[Pasted image 20250429114240.png\|Pasted image 20250429114240.png]]
+![Pasted image 20250429114240.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114240.png)
 
 #### Costi di questo algoritmo
 - ogni volta vado a visitare n-1 nodi quindi costo $O(n^2)$
@@ -148,14 +148,14 @@ Notazioni utilizzate:
 	- visto che abbiamo $n$ router costa $O(n^2)$
 ### Algoritmo distance vector (decentralizzato)
 si basa su un'equazione ideata da Bellman-Ford
-![[Pasted image 20250429115720.png\|Pasted image 20250429115720.png]]
+![Pasted image 20250429115720.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429115720.png)
 Dove: 
 - $dₓ(y)$ → costo del percorso minimo da x a y 
 - $Cₓ,ᵥ$ → costo collegamento diretto da x a v 
 - $dᵥ(y)$ → costo cammino minimo da v a y
 #### Esempio
 Nodo `x` vuole raggiungere `y`. 
-![[Pasted image 20250429115814.png\|Pasted image 20250429115814.png]]
+![Pasted image 20250429115814.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429115814.png)
 Ha tre vicini diretti:
 1. **Via `v₁`**:
     - `c(x,v₁) = 4`
@@ -180,7 +180,7 @@ Ha tre vicini diretti:
 - Il processo si ferma quando nessuna tabella cambia più → la rete ha **convergenza**.
 ### Esempio specifico ma astratto
 #### T=0 inizializzazione
-![[Pasted image 20250429120235.png\|Pasted image 20250429120235.png]]
+![Pasted image 20250429120235.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429120235.png)
 - La tabella in alto a sx mostra il distance vector di a cioè quanto a stima che costi raggiungere ogni altro nodo. 
 - Ovviamente come per prima per raggiungere sé stesso è 0, per raggiungere i suoi vicini è 8 e 1. Gi altri li mette a inf perché non sa chi sono
 Cosa succede: 

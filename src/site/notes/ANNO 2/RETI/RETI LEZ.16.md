@@ -9,7 +9,7 @@
 è incapsulato dentro IP, ma non viene considerato un protocollo di trasporto perché non ha quello come scopo
 - i messaggi di ICMP sono nello stesso datagramma di IP
 Informazioni su come è strutturato:
-![[Pasted image 20250505192401.png\|Pasted image 20250505192401.png]]
+![Pasted image 20250505192401.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192401.png)
 - **Tipo (8 bit)**: identifica il tipo di messaggio (es. richiesta echo, host non raggiungibile, ecc.)
 - **Codice (8 bit)**: specifica il significato dettagliato del tipo.
 - **Checksum (16 bit)**: per il controllo degli errori.
@@ -48,7 +48,7 @@ Questi sono tutti i messaggi possibili, se scendi giù c'è un focus sui più ut
 - Serve per “mappare” i router intermedi tra sorgente e destinazione.
 
 #### Focus su Traceroute e ICMP
-![[Pasted image 20250505192939.png\|Pasted image 20250505192939.png]]
+![Pasted image 20250505192939.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192939.png)
 con Traceroute possiamo tracciare il percorso di un pacchetto
 - posso inviare un pacchetto "sonda" con UDP o ICMP
 - invio questo pacchetto con TTL=1 time to live=1
@@ -104,7 +104,7 @@ Una rete è:
 	- Il server lo usa per interrogare e comandare.
 	- I dispositivi lo usano per inviare aggiornamenti e notifiche.
 	- Esempi di protocolli: **SNMP**, **NetConf**, **RESTCONF**.
-![[Pasted image 20250505194010.png\|Pasted image 20250505194010.png]]
+![Pasted image 20250505194010.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505194010.png)
 ### Come si gestisce una rete?
 Spieghiamo diversi modi per gestire una rete 
 - se sei tipo uno che lavora per modificarle ecc...

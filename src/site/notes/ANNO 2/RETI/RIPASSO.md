@@ -381,7 +381,7 @@
 				- timeout non impostato correttamente
 				- duplicazioni
 ![Pasted image 20250410180557.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410180557.png)
-![[Pasted image 20250410181647.png\|Pasted image 20250410181647.png]]
+![Pasted image 20250410181647.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410181647.png)
 - **scenario 3**
 	- breve descrizione
 		- 4 host 
@@ -389,7 +389,7 @@
 		- timeout e ritrasmissioni
 	- problematiche
 		- host adiacenti a router prendono tutta la banda possibile
-![[Pasted image 20250410182434.png\|Pasted image 20250410182434.png]]
+![Pasted image 20250410182434.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410182434.png)
 
 - **controllo della congestione 2 approcci**
 	- *end-to-end*
@@ -407,7 +407,7 @@
 		- questo concetto regola dinamicamente gli MSS
 		- Maximum Segment Size, ovvero regola quanti segmenti può inviare prima di attendere una ricezione
 		- inizia da 1 aumenta additivamente ad ogni RTT e appena avviene un fault gli cwnd vengono dimezzati
-![[Pasted image 20250411162431.png\|Pasted image 20250411162431.png]]
+![Pasted image 20250411162431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411162431.png)
 
 - **fasi di gestione del tasso di invio**
 	- *slow start*
@@ -449,7 +449,7 @@
 				- le invia il destinatario al mittente
 				- 1 se c'è
 				- 0 se non c'è
-![[Pasted image 20250411183520.png\|500]]
+![Pasted image 20250411183520.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411183520.png)
 - **fairness di TCP e UDP**
 	- TCP è fair perché il troughput è dato da $R/K$
 		- ovvero il numero la capacità del collegamento fratto il numero delle connessioni
@@ -531,7 +531,7 @@
 		- abbiamo il *piano dei dati* con i vari router e le AS
 		- poi a un livello *intermedio* abbiamo le SDN con il controller
 		- ancora sopra abbiamo *il piano di controllo* con le varie *applicazioni* di gestione della rete
-![[Pasted image 20250503150640.png\|Pasted image 20250503150640.png]]
+![Pasted image 20250503150640.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150640.png)
 - come è fatto il controller delle SDN
 	- è diviso in
 		- *Livello di interfaccia* con le applicazioni
@@ -541,7 +541,7 @@
 		- *Comunicazione con i dispositivi che controlla*
 			- Attraverso protocolli come **Open Flow** comunica con i vari dispositivi della rete come switch ecc...
 			- questo **insieme di protocolli** è detto **Southbound API**
-![[Pasted image 20250503150921.png\|400]]
+![Pasted image 20250503150921.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150921.png)
 
 ![Pasted image 20250417214551.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214551.png)
 
@@ -641,7 +641,7 @@
 		- suggerisce quale Server DNS usare
 		- Router First-Hop da usare
 			- ovvero router gateway, colui che si collega ad altre reti non interne facendo da tramite
-![[Pasted image 20250418153930.png\|Pasted image 20250418153930.png]]
+![Pasted image 20250418153930.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418153930.png)
 
 - **Come si ottengono IP pubblici/privati da condividere con la tua rete**
 	- ISP ha un grande blocco di indirizzi che assegnerà a sua volta ad ogni rete che ne richiede
@@ -665,7 +665,7 @@
 		- i dispositivi della rete avranno un indirizzo IP privato
 		- il router NAT dovrà ogni volta cambiare le varie intestazioni dei datagrammi mettendo l'IP pubblico, i dispositivi esterni alla rete vedranno solo il router NAT come dispositivo nella rete e poi dovrà essere lui a condividere i datagrammi corretti nella rete interna al dispositivo corretto
 		- per ricordarsi a chi deve condividere quel datagramma utilizza una tabella NAT con salvate le varie occorrenze
-![[Pasted image 20250421191015.jpg\|Pasted image 20250421191015.jpg]]
+![Pasted image 20250421191015.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421191015.jpg)
 
 - **IPv6**
 	- descrizione
@@ -699,7 +699,7 @@
 			- Contatore dei byte o dei pacchetti, che tiene conto di quelli che hanno usato una certa regola
 	- protocollo
 		- protocollo utilizzato dai dispositivi OpenFlow come router ecc... che permette di comunicare con il server controller della SDN
-![[Pasted image 20250503151241.png\|Pasted image 20250503151241.png]]
+![Pasted image 20250503151241.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151241.png)
 
 - **Load Balancing**
 	- caratteristica dell'inoltro generalizzato
@@ -847,12 +847,12 @@
 	- 4.*TTL expired(8)*
 		- serve per quando imposti un determinato limite di hop utilizzando un contatore TTL che decrementa ad ogni hop
 		- se arriva a 0 invia questo segnale
-![[Pasted image 20250505192401.png\|Pasted image 20250505192401.png]]
+![Pasted image 20250505192401.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192401.png)
 
 - **Traceroute**
 	- strumento di diagnostica per capire quanti hop deve effettuare un pacchetto sonda per raggiungere un determinato punto di destinazione
 	- di volta in volta si incrementano i TTL
-![[Pasted image 20250505192939.png\|Pasted image 20250505192939.png]]
+![Pasted image 20250505192939.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192939.png)
 
 - **nuova versione ICMPv6**
 	- adattato ai nuovi router che non fanno troppa frammentazione
@@ -1038,7 +1038,7 @@
 ![Pasted image 20250521122639.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122639.png)
 - **Token Passing**
 	- Token che viene passato per ogni nodo, chi lo ha può usare il collegamento
-![[Pasted image 20250521122744.png\|Pasted image 20250521122744.png]]
+![Pasted image 20250521122744.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122744.png)
 
 - Gestione via cavo di 
 	- *downstream*
@@ -1056,7 +1056,7 @@
 	- Per identificare un dispositivo di rete ad esempio una scheda di rete per effettuare uno scambio dei frame abbiamo bisogno di un indirizzo MAC, è a 48 bit ed è memorizzato nella ROM della NIC Network Interface Card
 - **come vengono scelti IEE**
 	- ente internazionale che ha lo scopo di gestire e fornire indirizzi MAC ai vari produttori di NIC
-![[Pasted image 20250521180754.png\|Pasted image 20250521180754.png]]
+![Pasted image 20250521180754.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521180754.png)
 - **Da IP a MAC**
 	- Viene utilizzato un protocollo ARP che ha una tabella ARP dove sono presenti 
 		- Ogni nodo IP nella LAN con le sue interfacce e il suo Indirizzo MAC con anche un TTL per la validità dell'informazione
@@ -1216,7 +1216,7 @@
 				- al loro interno hanno un MAC e un identificativo dell'AP il SSID
 	- dopo aver instaurato questo collegamento con accessi sicuri attraverso ad esempio WPA2
 	- l'host può inviare un DHCP discover che sarà passato all'AP e poi al server DHCP
-![[Pasted image 20250528124155.png\|Pasted image 20250528124155.png]]
+![Pasted image 20250528124155.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124155.png)
 
 - **collisioni nelle reti wireless**
 	- *CSMA/CA*
@@ -1249,7 +1249,7 @@
 			- **Paging**
 				- il master invita un dispositivo specifico a entrare quando lo conosce
 					- viene successivamente comunicato l'indirizzo di partecipazione e altre informazioni utili
-![[Pasted image 20250529120105.png\|300]]
+![Pasted image 20250529120105.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529120105.png)
 
 - **Reti 4G/5G**
 	- definizione

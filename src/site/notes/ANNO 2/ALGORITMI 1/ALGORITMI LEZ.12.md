@@ -99,7 +99,7 @@ per ribilanciare devo andare a modificare il sottoalbero T del nodo v
 ci sono 4 casi del sottoalbero T
 ![Pasted image 20241127175545.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241127175545.png)
 ##### CASO SS
-![[Pasted image 20241128101018.png\|400]]
+![Pasted image 20241128101018.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241128101018.png)
 il coso grigio indica 2 casi che vedremo poi
 abbiamo delle altezze definite
 - L’altezza di $T(v)$ è $h+3$, 
@@ -118,10 +118,10 @@ ora per definire $T_2$ ci sono 2 sotto casi possibili:
 
 ##### CASO SD
 in questo caso abbiamo un figlio a $sx$ di $v$ che ha un sotto albero a $dx$ che provoca uno sbilanciamento
-![[Pasted image 20241128104342.png\|500]]
+![Pasted image 20241128104342.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241128104342.png)
 il problema viene causato da $T(w)$ che è alto $h+1$
 
-![[Pasted image 20241128105611.png\|Pasted image 20241128105611.png]]
+![Pasted image 20241128105611.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241128105611.png)
 possiamo fare una rotazione del sottoalbero $sx$ a $sx$  e poi dell'albero principale a $dx$ 
 il caso SD può essere provocato da 
 - inserimenti in $T_2$ e in $T_3$

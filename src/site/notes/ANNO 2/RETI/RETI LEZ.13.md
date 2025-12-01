@@ -24,7 +24,7 @@ l'host può ottenerlo:
 	- Questo sistema è ideale per utenti mobili che entrano ed escono spesso dalla rete, come smartphone e portatili.  
 >[!attention] Tuttavia, poiché ogni accesso può dare un IP diverso, **non garantisce la stabilità di una connessione TCP attiva** (che dipende dall’indirizzo IP).
 ### Dove è posizionato?
-![[Pasted image 20250418153930.png\|Pasted image 20250418153930.png]]
+![Pasted image 20250418153930.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418153930.png)
 ##### Il DHCP in 4 passi
 1. **DHCP Discover** (opzionale):  
     L’host invia un messaggio broadcast sulla rete per **scoprire se ci sono server DHCP disponibili**.
@@ -56,8 +56,8 @@ il DHCP non fornisce solo IP ma anche:
     
 - **Maschera di rete**(subnet): definisce la parte dell’indirizzo IP che identifica la rete e quella che identifica l’host.
 ### Altri esempi di DHCP
-![[Pasted image 20250418155017.png\|Pasted image 20250418155017.png]]
-![[Pasted image 20250418155028.png\|Pasted image 20250418155028.png]]
+![Pasted image 20250418155017.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418155017.png)
+![Pasted image 20250418155028.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418155028.png)
 ### Rispondiamo alla seconda domanda
 Come fa una _rete_ a ottenere l'indirizzo IP (la parte dell'indirizzo relativa alla rete)?
 Qui parleremo di indirizzi pubblici su una rete ma diciamo che si applica la medesima cosa su indirizzi privati
@@ -84,7 +84,7 @@ Se scelgo di suddividere in blocchi più piccoli:
 > Il blocco `200.23.16.0/20` può essere suddiviso in **8 sotto-blocchi da /23**  
 > Ognuno con **512 indirizzi** ($2^{9}$, perché 32 − 23 = 9)
 
-![[Pasted image 20250418160050.png\|Pasted image 20250418160050.png]]
+![Pasted image 20250418160050.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418160050.png)
 
 ### route aggregation
 Ogni **ISP** o **grande router** su Internet deve **pubblicizzare** agli altri router **quali indirizzi IP è in grado di raggiungere**.  
@@ -111,7 +111,7 @@ Tanti blocchi **vicini** (stessa radice binaria) sono **aggregati in uno solo**.
 - È l’**indirizzo di rete** (tutti gli ultimi 12 bit a 0)
 2. Fine: si aggiungono $2^{12} - 1 = 4095$ indirizzi
 - Ultimo indirizzo: `200.23.31.255` (tutti gli ultimi 12 bit a 1)
-![[Pasted image 20250418162511.png\|Pasted image 20250418162511.png]]
+![Pasted image 20250418162511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162511.png)
 
 ### Cambio di percorsi
 
@@ -124,7 +124,7 @@ Tanti blocchi **vicini** (stessa radice binaria) sono **aggregati in uno solo**.
     > “Inviatemi tutto ciò che inizia con **199.31.0.0/16**  
     > oppure con **200.23.18.0/23**” ← (questo è più specifico!)
 
-![[Pasted image 20250418162743.png\|Pasted image 20250418162743.png]]
+![Pasted image 20250418162743.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162743.png)
 
 ricordiamo che se avviene una richiesta su un indirizzo più specifico
 - essa viene soddisfatta da quello che ci assomiglia di più
@@ -134,7 +134,7 @@ ricordiamo che se avviene una richiesta su un indirizzo più specifico
 - I **router Internet scelgono sempre il percorso più specifico**, se esiste.
 - Quindi il traffico per `200.23.18.0/23` andrà verso **ISPs-R-Us**,  
     nonostante Fly-By-Night-ISP continui a pubblicare il blocco `/20`.
-![[Pasted image 20250418162952.png\|Pasted image 20250418162952.png]]
+![Pasted image 20250418162952.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162952.png)
 
 ## Ultime parole su questo argomenti degli indirizzi IP
 rispondendo a delle domande
@@ -156,7 +156,7 @@ rispondendo a delle domande
 
 ### NAT
 sta per network address translation
-![[Pasted image 20250421191015.jpg\|Pasted image 20250421191015.jpg]]
+![Pasted image 20250421191015.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421191015.jpg)
 Serve per ridurre il numero di dispositivi che usano l'IPv4 pubblico(per l'esterno)
 - ogni dispositivo ha un suo indirizzo privato
 	- tipo `10.0.0.1`
@@ -175,7 +175,7 @@ Il Router di tipo NAT deve gestire meticolosamente la traduzione degli indirizzi
 	- deve sostituire ad ogni pacchetto in entrata il datagramma corretto
 		- scambiando i vari indirizzi ip pubblici e la porta pubblica con i rispettivi privati
 ## Esempio di router NAT
-![[Pasted image 20250421192215.jpg\|Pasted image 20250421192215.jpg]]
+![Pasted image 20250421192215.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421192215.jpg)
 I vari step:
 - Abbiamo un PC 10.0.0.1  che vuole accedere ad un sito web 128.119.40.186 sulla porta 80 (HTTP) 
 	- La rete locale ha IP privati come quello sopra 
@@ -208,7 +208,7 @@ nasce per i motivi detti prima:
 questi 64
 
 #### Datagramma IPv6
-![[Pasted image 20250421193057.jpg\|Pasted image 20250421193057.jpg]]
+![Pasted image 20250421193057.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193057.jpg)
 Campi principali: 
 - Versione (ver): sempre 6 
 - Classe di traffico: dà priorità ai datagrammi importanti 
@@ -232,7 +232,7 @@ Per comunicare in una rete mista si usa il tunneling dove:
 - un pacchetto IPv6 viene inserito in un pacchetto IPv4(payload)
 - così può viaggiare in IPv4
 - poi un router IPv6 può spacchettarlo senza problemi 
-![[Pasted image 20250421193825.jpg\|Pasted image 20250421193825.jpg]]
+![Pasted image 20250421193825.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193825.jpg)
 
 #### Esempio 
 ![Pasted image 20250421193837.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193837.jpg)

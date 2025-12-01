@@ -248,7 +248,7 @@ Centralizzando il controllo:
 - Le reti non sono più chiuse nei sistemi di un singolo produttore
 	- possono esserci standard più aperti come OPENFlow(vedrai tra poco)
 ### Analogia per spiegare SDN
-![[Pasted image 20250503145108.png\|Pasted image 20250503145108.png]]
+![Pasted image 20250503145108.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503145108.png)
 
 ### Concetto di ingegneria del traffico
 è l’insieme delle tecniche e conoscenze per:
@@ -277,7 +277,7 @@ sostanzialmente viene detto che:
 	- Funziona **senza SDN**, ma **con logica simile** ma resta comunque distribuito
 
 ## Torniamo a parlare di SDN
-![[Pasted image 20250503150332.png\|Pasted image 20250503150332.png]]
+![Pasted image 20250503150332.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150332.png)
 è centralizzato e formato così
 1. Inoltro generalizzato "basato sui flussi" 
     - Es. OpenFlow: il controller decide come gestire ogni flusso di pacchetti, non solo in base alla destinazione. 
@@ -290,7 +290,7 @@ sostanzialmente viene detto che:
     - Si possono scrivere app che controllano la rete (es. per routing dinamico, sicurezza, ottimizzazione).
 
 #### Come è suddiviso correttamente SDN
-![[Pasted image 20250503150640.png\|Pasted image 20250503150640.png]]
+![Pasted image 20250503150640.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150640.png)
 - Nel piano dei dati abbiamo semplicemente gli switch che eseguono ciò che gli viene ordinato dall'alto
 	-  La comunicazione tra controller e switch usa API standard tipo Open Flow
 - Poi abbiamo un controller che fa da intermediario e comunica con i due livelli attraverso delle API
@@ -299,7 +299,7 @@ sostanzialmente viene detto che:
 - Poi ci sono le vere e proprie applicazioni che effettuano "i calcoli"
 
 ##### Come è fatto un controller SDN dentro
-![[Pasted image 20250503150921.png\|400]]
+![Pasted image 20250503150921.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150921.png)
 
 Presenta tre livelli principali
 1. Livello di interfaccia con le applicazioni
@@ -318,7 +318,7 @@ Presenta tre livelli principali
 	- Usa protocolli come OpenFlow o SNMP per inviare regole agli switch. 
 	- È la parte che parla direttamente con l’hardware.
 ### Precisazione sul protocollo OpenFlow
-![[Pasted image 20250503151241.png\|Pasted image 20250503151241.png]]
+![Pasted image 20250503151241.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151241.png)
 È un protocollo di comunicazione tra controller e switch SDN
 Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3 categorie: 
 1. Controller-to-switch: es. installa o aggiorna una regola. 
@@ -347,7 +347,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
 | **flow-removed** | Avvisa che una regola è stata rimossa dalla tabella di flusso             |
 | **port status**  | Informa il controller di **cambiamenti su una porta** (es. guasti, stato) |
 ### **interazione completa tra il piano dei dati e il piano di controllo** in una rete SDN
-![[Pasted image 20250503151815.png\|Pasted image 20250503151815.png]]
+![Pasted image 20250503151815.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151815.png)
 **1️⃣ Guasto segnalato (piano dei dati → controller)**
 - Lo **switch S1 rileva un guasto** e invia un messaggio `port status` (OpenFlow) al **controller SDN**.
 **2️⃣ Aggiornamento del controller**
@@ -359,7 +359,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
     - la **mappa della rete (network graph)**
     - le **informazioni aggiornate sullo stato dei link**
 - Calcola **nuove rotte** per evitare il collegamento guasto.
-![[Pasted image 20250503151839.png\|Pasted image 20250503151839.png]]
+![Pasted image 20250503151839.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151839.png)
  **5️⃣ Creazione delle nuove tabelle**
 - L'applicazione interagisce col modulo **flow-table computation** del controller per **creare le nuove tabelle di inoltro**.
 **6️⃣ Aggiornamento degli switch**
@@ -367,7 +367,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
 
 #### Concetto di Intent-Based Networking(IBN)
 È un modello in cui l’**utente non definisce più “come” gestire la rete**, ma **cosa vuole ottenere**. L’infrastruttura si occupa del “come”.
-![[Pasted image 20250503152338.png\|Pasted image 20250503152338.png]]
+![Pasted image 20250503152338.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503152338.png)
 **1️⃣ L’utente esprime un intento**
 - In **forma dichiarativa** (cioè il risultato desiderato, non il metodo).
 - Esempi:

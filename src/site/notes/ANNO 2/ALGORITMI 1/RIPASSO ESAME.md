@@ -708,7 +708,7 @@ Inserisco uno ad uno gli elementi della coda con priorità più piccola nella co
 Un albero binomiale $B_{i}$ è definito ricorsivamente in questo modo
 - $B_{0}$ ha solo la radice
 - $B_{i+1}$ è ottenuto fondendo tra loro due $B_{i}$, ponendo la radice dell'uno come figlio della radice dell'altro
-![[Pasted image 20241204185758.png\|Pasted image 20241204185758.png]]
+![Pasted image 20241204185758.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204185758.png)
 #### Proprietà strutturali
 1. In $B_i$, la $i$ è il numero massimo di figli (la `d` di prima)
 2. Il numero totale di nodi: $2^i$

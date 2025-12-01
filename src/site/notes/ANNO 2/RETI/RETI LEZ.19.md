@@ -25,7 +25,7 @@ ad esempio:
 Ciascuna interfaccia in una LAN ha un suo indirizzo MAC e indirizzo IP
 - entrambi univoci
 
-![[Pasted image 20250521180754.png\|Pasted image 20250521180754.png]]
+![Pasted image 20250521180754.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521180754.png)
 
 ## Come vengono scelti gli indirizzi IEEE
 - L’**IEEE** (ente internazionale) si occupa di **gestire lo spazio degli indirizzi MAC** per garantire che siano **univoci** nel mondo.
@@ -43,11 +43,11 @@ Utilizzo un protocollo chiamato ARP che ha una tabella chiamata ARP
 			- di solito 20 min
 
 #### Questo protocollo in azione
-![[Pasted image 20250521214402.png\|Pasted image 20250521214402.png]]
+![Pasted image 20250521214402.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214402.png)
 1. A invia un messaggio in broadcast chiedendo chi è B
-![[Pasted image 20250521214436.png\|Pasted image 20250521214436.png]]
+![Pasted image 20250521214436.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214436.png)
 2. B risponde e invia il suo indirizzo MAC
-![[Pasted image 20250521214459.png\|Pasted image 20250521214459.png]]
+![Pasted image 20250521214459.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214459.png)
 3. A può popolare la sua tabella 
 
 #### ARP SPOOFING o POISONING
@@ -64,13 +64,13 @@ Un attaccante ora può:
     - Può **intercettare**, **modificare** o **registrare** i dati,
     - Poi **li inoltra al vero destinatario**, così nessuno si accorge dell'attacco.
 ##### Scenario dove voglio inviare il datagramma a un nodo esterno della sottorete
-![[Pasted image 20250521220219.png\|Pasted image 20250521220219.png]]
+![Pasted image 20250521220219.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220219.png)
 - DHCP era quel server che prevedeva che appena un dispositivo si connette a una rete gli viene assegnato un indirizzo IP ecc...
-![[Pasted image 20250521220227.png\|Pasted image 20250521220227.png]]
-![[Pasted image 20250521220234.png\|Pasted image 20250521220234.png]]
-![[Pasted image 20250521220242.png\|Pasted image 20250521220242.png]]
-![[Pasted image 20250521220253.png\|Pasted image 20250521220253.png]]
-![[Pasted image 20250521220301.png\|Pasted image 20250521220301.png]]
+![Pasted image 20250521220227.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220227.png)
+![Pasted image 20250521220234.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220234.png)
+![Pasted image 20250521220242.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220242.png)
+![Pasted image 20250521220253.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220253.png)
+![Pasted image 20250521220301.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220301.png)
 ## Ethernet
 - Utilizzata per le reti LAN cablate
 - nel tempo si è evoluta e ora può raggiungere fino a 400 Gbps
@@ -86,7 +86,7 @@ Un attaccante ora può:
 	- usata oggi
 	- uno switch di livello 2 al centro
 	- ognuno ha un suo protocollo ethernet, i nodi non si scontrano tra loro
-![[Pasted image 20250522154942.png\|Pasted image 20250522154942.png]]
+![Pasted image 20250522154942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522154942.png)
 #### Un frame ethernet
 Quando un dispositivo (es. un PC) vuole inviare dati (es. un datagramma IP), **la scheda di rete incapsula quei dati in un frame Ethernet**, con queste sezioni:
 ![Pasted image 20250522155625.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522155625.png)

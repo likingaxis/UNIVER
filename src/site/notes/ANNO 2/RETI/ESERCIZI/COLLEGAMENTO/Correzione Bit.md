@@ -59,7 +59,7 @@ checksum di Internet.
 - poi somma al risultato i successivi 16 bit della fine
 - compl a 1
 
-![[Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg\|400]]
+![Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg)
 
 ### ESERCIZIO 6b
 ricordati la conversione da esadecimale a decimale e poi da decimale a binario
